@@ -19,6 +19,7 @@ class HomeFragment :  BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inf
         super.onViewCreated(view, savedInstanceState)
         initData()
         initView()
+        //-
     }
 
     private fun initData() {
