@@ -5,18 +5,6 @@
       <map>
         <entry key="..\:/Users/AppDev/AndroidStudioProjects/CardAPPDevelopmentDDC/app/src/main/res/layout/activity_main.xml" value="0.10144927536231885" />
         <entry key="..\:/Users/AppDev/AndroidStudioProjects/CardAPPDevelopmentDDC/app/src/main/res/layout/fragment_history.xml" value="0.16893115942028986" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.11041666666666666" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.11041666666666666" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/dialog_loading.xml" value="0.15942028985507245" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/fragment_history.xml" value="0.16077898550724637" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/fragment_history_graph.xml" value="0.1" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/fragment_home.xml" value="0.15942028985507245" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/fragment_pay.xml" value="0.16077898550724637" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/fragment_settings.xml" value="0.16077898550724637" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/history_header_layout.xml" value="0.13269927536231885" />
-        <entry key="..\:/Users/AppDev/AndroidStudioProjects/KaryuApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.11041666666666666" />
         <entry key="..\:/Users/lfan7/Practice/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2953703703703704" />
         <entry key="..\:/Users/lfan7/Practice/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2953703703703704" />
         <entry key="..\:/Users/lfan7/Practice/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2953703703703704" />
@@ -41,9 +29,12 @@
         <entry key="..\:/Users/uneru/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/activity_main.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/uneru/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/activity_scan_qr.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/uneru/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/fragment_amount.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/uneru/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/fragment_charge.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/uneru/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/fragment_history.xml" value="0.25769927536231885" />
         <entry key="..\:/Users/uneru/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/fragment_history_graph.xml" value="0.25769927536231885" />
+        <entry key="..\:/Users/uneru/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/fragment_home.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/uneru/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/fragment_pay.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/uneru/AndroidStudioProjects/KaryuApp/app/src/main/res/layout/tytle_layout.xml" value="0.21927083333333333" />
       </map>
     </option>
   </component>
