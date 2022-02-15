@@ -14,10 +14,13 @@ import com.example.practice.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
 
+    private lateinit var instance:MainActivity
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initNavigationBar()
+
+        instance=this
 
     }
 
@@ -36,5 +39,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
 //        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.labelVisibilityMode= BottomNavigationView.LABEL_VISIBILITY_LABELED
         navView.setupWithNavController(navController)
+    }
+
+    public fun getInstance():MainActivity{
+        return instance
     }
 }

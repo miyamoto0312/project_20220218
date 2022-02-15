@@ -5,7 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".module.history.HistoryFragment"
     android:orientation="vertical">
-    <include layout="@layout/history_header_layout"/>
+    <include
+        android:id="@+id/title_graph"
+        layout="@layout/history_header_layout"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listView"

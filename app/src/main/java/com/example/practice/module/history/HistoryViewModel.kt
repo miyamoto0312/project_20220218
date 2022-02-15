@@ -6,25 +6,20 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.practice.bean.HistoryBean
-import com.example.practice.bean.HomeInfoBean
-import com.example.practice.module.home.HomeViewModel
 import com.example.practice.network.NetworkApi
-import com.example.practice.network.ReadJsonFile
 import kotlinx.coroutines.launch
 
 class HistoryViewModel : ViewModel() {
-    private val jsonFileName = "getHistoryData.json"
-    val historyListLiveData = MutableLiveData<HistoryBean>()
-    private var readJsonFile= ReadJsonFile(jsonFileName)
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is History Fragment"
-    }
-    val text: LiveData<String> = _text
+    val historyListLiveData = MutableLiveData<Result<HistoryBean>>()
+    val loadingLiveData = MutableLiveData<Boolean>()
 
-    fun getHistoryList(context: Context) {
+    fun getHistoryList(startDate:String,endDate:String) {
+        loadingLiveData.postValue(true)
         viewModelScope.launch {
-            val result = readJsonFile.getHistoryListData(context,HistoryBean::class.java)
-            historyListLiveData.value=result!!
+            // read data from networkapi
+            val resultFromNetwork = NetworkApi.requestHistoryInfo(startDate,endDate)
+            historyListLiveData.value=resultFromNetwork
+            loadingLiveData.postValue(false)
         }
     }
 }

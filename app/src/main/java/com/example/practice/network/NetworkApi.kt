@@ -1,28 +1,22 @@
 package com.example.practice.network
 
-import android.content.Context
 import com.example.practice.network.base.BaseNetworkApi
-import android.util.Log
-import com.example.practice.bean.HistoryBean
-import com.google.gson.Gson
-
-import java.io.IOException
-
-import java.io.ByteArrayOutputStream
-
-import java.io.InputStream
-
-
-
-
 
 /**
  * ネットワーク請求実施
- * サーバーのURL：http://localhost:8080/
+ * サーバーのURL：https://fxvnv345tf.execute-api.ap-northeast-1.amazonaws.com/
  */
-object NetworkApi : BaseNetworkApi<INetworkService>("https://v0.yiketianqi.com/") {
-
-    suspend fun requestHomeInfo() = getResult {
-        service.requestHomeInfo()
+object NetworkApi : BaseNetworkApi<INetworkService>("https://d664bb3e-e2c0-4643-bfcf-8cb71ce79026.mock.pstmn.io") {
+    //履歴APIをコール
+    suspend fun requestHistoryInfo(startDate:String,endDate:String) = getResult {
+        service.requestHistoryInfo(startDate,endDate)
+    }
+    //残高APIをコール
+    suspend fun requestLeftMoney() = getResult {
+        service.requestLeftMoney()
+    }
+    //お知らせAPIをコール
+    suspend fun requestNotificationInfo() = getResult {
+        service.requestNotificationInfo()
     }
 }

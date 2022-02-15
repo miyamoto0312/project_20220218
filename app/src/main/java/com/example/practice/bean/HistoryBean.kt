@@ -1,14 +1,16 @@
 package com.example.practice.bean
 
-data class HistoryBean(
-    val dataList: List<Data>,
-    val dateEnd: String,
-    val dateStart: String,
-    val name: String
-)
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-data class Data(
-    val address: String,
-    val date: String,
-    val price: String
-)
+@Parcelize
+data class HistoryBean(
+    var dataList: List<Data>
+):Parcelable
+
+@Parcelize
+data class Data (
+    var address: String,
+    var date: String,
+    var price: String
+):Parcelable
