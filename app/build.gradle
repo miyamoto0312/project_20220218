@@ -70,4 +70,7 @@ dependencies {
     //ExpandableTextView
     implementation'com.ms-square:expandableTextView:0.1.4'
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
+
+
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
 }
