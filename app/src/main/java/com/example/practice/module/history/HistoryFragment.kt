@@ -2,8 +2,6 @@ package com.example.practice.module.history
 
 import android.app.DatePickerDialog
 import android.app.Dialog
-import android.content.Intent
-import android.icu.util.Calendar
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
@@ -19,7 +17,9 @@ import com.example.practice.bean.Data
 import com.example.practice.bean.HistoryBean
 import com.example.practice.databinding.FragmentHistoryBinding
 import com.example.practice.utils.LoadingDialogUtils
-import java.util.ArrayList
+import java.util.*
+import kotlin.collections.ArrayList
+
 
 class HistoryFragment : BaseFragment<FragmentHistoryBinding>(FragmentHistoryBinding::inflate) {
 
@@ -51,7 +51,7 @@ class HistoryFragment : BaseFragment<FragmentHistoryBinding>(FragmentHistoryBind
         endTv.text = endDate
         graphView.setImageResource(R.mipmap.pie_chart)
         historyViewModel.historyListLiveData.observe(viewLifecycleOwner, Observer {
-            var init: (View, Data) -> Unit = {v:View,d:Data ->
+            var init: (View, Data) -> Unit = { v:View, d:Data ->
                 var addressView = v.findViewById<TextView>(R.id.address)
                 var dateview=v.findViewById<TextView>(R.id.time)
                 var priceView=v.findViewById<TextView>(R.id.price)
@@ -61,7 +61,8 @@ class HistoryFragment : BaseFragment<FragmentHistoryBinding>(FragmentHistoryBind
             }
             //get from networkApi
             var adapter = it.getOrNull()?.let { it1 ->
-                HistoryListViewAdapter(R.layout.history_list_item,
+                HistoryListViewAdapter(
+                    R.layout.history_list_item,
                     it1.dataList,init)
             }
 
@@ -89,7 +90,7 @@ class HistoryFragment : BaseFragment<FragmentHistoryBinding>(FragmentHistoryBind
             var data6 = Data("○○〇","30000円","2021/01/02")
             var data7 = Data("ルミネ新宿","30000円","2021/01/02")
 
-            var history=HistoryBean(listOf(data,data1,data2,data3,data4,data5,data6,data7))
+            var history= HistoryBean(listOf(data,data1,data2,data3,data4,data5,data6,data7))
 
             val action=HistoryFragmentDirections.actionNavigationHistoryToNavigationHistoryGraph(history)
 
