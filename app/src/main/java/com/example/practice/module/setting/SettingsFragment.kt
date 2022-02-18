@@ -21,19 +21,19 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsB
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initData()
-        initView()
+      //   initView()
     }
     private fun initData() {
         settingViewModel =
             ViewModelProvider(this).get(SettingsViewModel::class.java)
     }
 
-    private fun initView() {
+  /*  private fun initView() {
         val textView: TextView = viewBinding.textSettings
         settingViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
     }
-
+*/
 
 }
