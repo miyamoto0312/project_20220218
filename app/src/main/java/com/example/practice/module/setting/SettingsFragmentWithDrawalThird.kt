@@ -50,13 +50,4 @@ class SettingsFragmentWithDrawalThird : BaseFragment<FragmentSettingsWithdrawalT
     }
 
 
-
-    /*  private fun initView() {
-          val textView: TextView = viewBinding.textSettings
-          settingViewModel.text.observe(viewLifecycleOwner, Observer {
-              textView.text = it
-          })
-      }
-  */
-
 }

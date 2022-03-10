@@ -69,8 +69,8 @@ class PayFragment : BaseFragment<FragmentPayBinding>(FragmentPayBinding::inflate
                 var data= result.data?.getStringExtra("qrdata").toString()
                 //var bundle = bundleOf("qrdate" to data?.getStringExtra("qrdata").toString())
                 //findNavController().navigate(R.id.navigation_amount,bundle)
-                var action=PayFragmentDirections.actionNavigationPayToNavigationAmount(data)
-                findNavController().navigate(action)
+//                var action=PayFragmentDirections.actionNavigationPayToNavigationAmount(data)
+//                findNavController().navigate(action)
             }
             else{
                 findNavController().popBackStack()
