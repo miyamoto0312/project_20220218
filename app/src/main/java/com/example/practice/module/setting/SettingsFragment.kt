@@ -21,7 +21,7 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsB
 //    val DeleteAccount : Button = viewBinding.DeleteAccount
 
     private lateinit var settingViewModel: SettingsViewModel
-
+//
 
     override fun onCreateView(
         inflater: LayoutInflater,

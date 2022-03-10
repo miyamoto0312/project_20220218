@@ -25,7 +25,7 @@ class SettingsFragmentWithDrawalThird : BaseFragment<FragmentSettingsWithdrawalT
 
     private lateinit var settingViewModel: SettingsViewModel
 
-
+  //
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

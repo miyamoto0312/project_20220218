@@ -32,7 +32,7 @@ class SettingsFragmentWithDrawal : BaseFragment<FragmentSettingsWithdrawalBindin
         return super.onCreateView(inflater, container, savedInstanceState)
 
     }
-
+//
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initData()
