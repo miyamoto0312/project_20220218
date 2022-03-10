@@ -62,7 +62,37 @@
         android:id="@+id/navigation_settings"
         android:name="com.example.practice.module.setting.SettingsFragment"
         android:label="@string/title_setting"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_navigation_settings_to_settings_withdrawal"
+            app:destination="@id/settings_withdrawal" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings_withdrawal"
+        android:name="com.example.practice.module.setting.SettingsFragmentWithDrawal"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_settings_withdrawal" >
+        <action
+            android:id="@+id/action_settings_withdrawal_to_settings_withdrawal_second"
+            app:destination="@id/settings_withdrawal_second" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings_withdrawal_second"
+        android:name="com.example.practice.module.setting.SettingsFragmentWithDrawalSecond"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_settings_withdrawal_second" >
+        <action
+            android:id="@+id/action_settings_withdrawal_second_to_settings_withdrawal_third"
+            app:destination="@id/settings_withdrawal_third" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings_withdrawal_third"
+        android:name="com.example.practice.module.setting.SettingsFragmentWithDrawalThird"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_settings_withdrawal_third" />
 
 
 </navigation>

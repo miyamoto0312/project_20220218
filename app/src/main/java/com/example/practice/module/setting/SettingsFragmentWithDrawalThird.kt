@@ -15,8 +15,11 @@ import com.example.practice.databinding.FragmentPayBinding
 import com.example.practice.databinding.FragmentSettingsBinding
 import com.example.practice.module.pay.PayViewModel
 import androidx.navigation.fragment.findNavController
+import com.example.practice.databinding.FragmentSettingsWithdrawalBinding
+import com.example.practice.databinding.FragmentSettingsWithdrawalThirdBinding
 
-class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsBinding::inflate){
+class SettingsFragmentWithDrawalThird : BaseFragment<FragmentSettingsWithdrawalThirdBinding>(
+    FragmentSettingsWithdrawalThirdBinding::inflate){
 
 //    val DeleteAccount : Button = viewBinding.DeleteAccount
 
@@ -35,11 +38,8 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsB
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initData()
-      //   initView()
+        //   initView()
 
-        view.findViewById<Button>(R.id.DeleteAccount).setOnClickListener{
-            findNavController().navigate(R.id.action_navigation_settings_to_settings_withdrawal)
-        }
     }
     private fun initData() {
 
